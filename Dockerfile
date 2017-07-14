@@ -5,6 +5,6 @@ RUN sudo dpkg -i ~/google-chrome.deb
 RUN sudo sed -i 's|HERE/chrome\"|HERE/chrome\" --disable-setuid-sandbox|g' /opt/google/chrome/google-chrome
 RUN rm ~/google-chrome.deb
 
-RUN sudo apt-get install python-software-properties
+RUN sudo apt-get update
 RUN curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 RUN sudo apt-get install nodejs
