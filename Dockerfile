@@ -1,7 +1,7 @@
 FROM circleci/openjdk:8-jdk-browsers
 
 RUN sudo apt-get update
-RUN curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+RUN curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 RUN sudo apt-get install nodejs
 
 RUN wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add
